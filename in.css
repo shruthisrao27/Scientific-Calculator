@@ -1,0 +1,154 @@
+/*container for calculator*/
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*main container -top portion*/
+.calculator{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/*for page*/
+html{
+    font-size: 16px;
+    /*background-image:url("21-210528_blue-background-full-hd-blue-wallpaper-download.png");*/
+   background-color:rgb(75, 207, 157);
+   
+}
+
+/*sub container -bottom portion*/
+.calc-container{
+    background-color: #1d1d1d;
+
+    width: 600px;
+    height: auto;
+
+    border-radius: 0 0 30px 30px;
+}
+ 
+/*operation*/
+.oper{
+    width: 600px;
+    height: 70px;
+
+   /* color: #878787;*/
+   color:whitesmoke;
+
+    font-size: 1.9em;
+    font-weight: bold;
+
+    position: relative;
+    overflow: hidden;
+}
+/* displaying the value of operation*/
+.oper .val{
+    position: absolute;
+
+    bottom: 5px;
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* output */
+
+.op{
+    width: 100%;;
+} 
+/* displaying the result*/
+
+.res{
+    width: 600px;
+    height: 140px;
+
+    color: #FFF;
+
+    font-size: 2.6em;
+    font-weight: bold;
+    
+    overflow: hidden;
+    position: relative;
+}
+/* displaying the value of the result*/
+
+.res .val{
+    position: absolute;
+     
+    top: 50%;
+    transform: translateY(-50%);
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* input of the field*/
+.inp{
+    background-color: rgba(245, 245, 245, 0.452);
+
+    border-radius: 0 0 25px 25px;
+    border: 1px solid #1d1d1d;
+    height: 340px;
+    
+}
+/*displaying the elements*/
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* displaying the button of row*/
+
+.row button{
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.5em;
+
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+
+    margin : 8px;
+
+    cursor: pointer;
+}
+/* hover effect*/
+.row button:hover{
+    font-weight: bold;
+}
+/* calculating the value*/
+.row #calculate{
+    color: #FFF;
+    background-color: #46e0bc;
+    width : 121px;
+    border-radius: 50px;
+}
+/*delete operation*/
+.row #delete{
+    color: #FFF;
+    background-color: #e05046;
+}
+/* all arthimetic operation*/
+#division, #multiplication, #subtraction, #addition {
+    color: #18b893;
+}
+/* button for input field*/
+.input button span{
+    font-size: 0.6em;
+    position: absolute;
+}
+ 
+.active-angle{
+    background-color:#1d1d1d!important;
+    color: #FFF !important;
+    border-radius: 10px !important;
+}
